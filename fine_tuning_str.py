@@ -59,15 +59,15 @@ def app():
 
     st.write("Avec un model_ft.summary() on a : ")
 
-    st.image('summary ft.png')
+    st.image('images/summary ft.png')
 
     st.write("**Résultat de l'entrainement**")
 
-    st.image("entrainement vrai FT.png")
+    st.image("images/entrainement vrai FT.png")
 
     st.write("**Test de l'algorithme**")
 
-    model_tl_exploitable = tf.keras.models.load_model('model_tl_360_363')
+    model_tl_exploitable = tf.keras.models.load_model('mycnn_weights')
 
     col1, col2 = st.columns(2)
 

@@ -121,7 +121,7 @@ def app():
     On choisit aléatoirement une image dans la dataset''')
 
     image_random = st.empty()
-    st.image('MMY_270358.jpg')
+    st.image('images/MMY_270358.jpg')
 
     frame_text = st.sidebar.empty()
     st.write('''
@@ -136,7 +136,7 @@ def app():
 
     layer_index = st.sidebar.slider("Sélectionnez une couche", 1, 6, 1)
     filter_index = st.sidebar.slider("Sélectionnez un filtre", 0, 63, 0)
-    image_path = rf"C:\Users\ronci\mines-paris-info\ProjetInfoS2_grouoe\activations_images3\Couche{layer_index}_filtre{filter_index}.png"
+    image_path = f"images/activations_images2/Couche{layer_index}_filtre{filter_index}.png"
 
 
     filter_image = Image.open(image_path)
@@ -160,8 +160,8 @@ def app():
                 st.stop()
 
         for j in range (0,32):
-        
-            image_path = rf"C:\Users\ronci\mines-paris-info\ProjetInfoS2_grouoe\activations_images3\Couche1_filtre{j}.png"
+
+            image_path = f"images/activations_images3/Couche1_filtre{j}.png"
             filter_image = Image.open(image_path)
             buf = BytesIO()
             plt.imsave(buf, filter_image, cmap='viridis')
@@ -178,7 +178,7 @@ def app():
                 st.write(f'Couche 2 filtre {j}')
             layer_number.write('Couche 2')
             filter_number.write(f'Couche 2 filtre {j}')
-            image_path = rf"C:\Users\ronci\mines-paris-info\ProjetInfoS2_grouoe\activations_images3\Couche2_filtre{j}.png"
+            image_path = f"images/activations_images3/Couche2_filtre{j}.png"
             filter_image = Image.open(image_path)
             buf = BytesIO()
             plt.imsave(buf, filter_image, cmap='viridis')
@@ -191,7 +191,7 @@ def app():
                 st.write(f'Couche 3 filtre {i}')
             layer_number.write('Couche 3')
             filter_number.write(f'Couche 3 filtre {i}')
-            image_path = rf"C:\Users\ronci\mines-paris-info\ProjetInfoS2_grouoe\activations_images3\Couche3_filtre{i}.png"
+            image_path = f"images/activations_images3/Couche3_filtre{i}.png"
             filter_image = Image.open(image_path)
             buf = BytesIO()
             plt.imsave(buf, filter_image, cmap='viridis')
@@ -204,7 +204,7 @@ def app():
                 st.write(f'Couche 4 filtre {i}')
             layer_number.write('Couche 4')
             filter_number.write(f'Couche 4 filtre {i}')
-            image_path = rf"C:\Users\ronci\mines-paris-info\ProjetInfoS2_grouoe\activations_images3\Couche4_filtre{i}.png"
+            image_path = f"images/activations_images3/Couche4_filtre{i}.png"
             filter_image = Image.open(image_path)
             buf = BytesIO()
             plt.imsave(buf, filter_image, cmap='viridis')
@@ -217,7 +217,7 @@ def app():
                 st.write(f'Couche 5 filtre {i}')
             layer_number.write('Couche 5')
             filter_number.write(f'Couche 5 filtre {i}')
-            image_path = rf"C:\Users\ronci\mines-paris-info\ProjetInfoS2_grouoe\activations_images3\Couche5_filtre{i}.png"
+            image_path = f"images/activations_images3/Couche5_filtre{i}.png"
             filter_image = Image.open(image_path)
             buf = BytesIO()
             plt.imsave(buf, filter_image, cmap='viridis')
@@ -231,7 +231,7 @@ def app():
                 st.write(f'Couche 6 filtre {i}')
             layer_number.write('Couche 6')
             filter_number.write(f'Couche 6 filtre {i}')
-            image_path = rf"C:\Users\ronci\mines-paris-info\ProjetInfoS2_grouoe\activations_images3\Couche6_filtre{i}.png"
+            image_path = f"images/activations_images3/Couche6_filtre{i}.png"
             filter_image = Image.open(image_path)
             buf = BytesIO()
             plt.imsave(buf, filter_image, cmap='viridis')
@@ -252,7 +252,7 @@ def app():
 
     image = st.empty()
 
-    st.image('grad_cam2.jpg')
+    st.image('images/grad_cam2.jpg')
 
 
     st.write(''' 
@@ -261,7 +261,7 @@ def app():
     considérées par le modèle pour trancher sont pertinentes. Cette méthode peut donc permettre de trouver le problème, si jamais.''')
     image2 = st.empty()
 
-    st.image('superimposed_cam.png')
+    st.image('images/superimposed_cam.png')
 
 
 

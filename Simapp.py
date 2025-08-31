@@ -10,19 +10,19 @@ def app():
 
     st.header("Création d'une première dataframe à partir de notre dataset")
 
-    image_path = "Dataset1.png"
+    image_path = "images/Dataset1.png"
 
     st.image(image_path, caption="première dataset", use_column_width=True)
 
     st.write("La première chose intéressante à vérifier pourrait être que toute les images possédent la même dimension. En effet si ce n'est pas le cas, cela posera problème au niveau de la couche d'entrée du réseau de neurones à implémenter. ")
 
-    image_path = "Image_verif_taille.png"
+    image_path = "images/Image_verif_taille.png"
 
     st.image(image_path, caption=" ", use_column_width=True)
 
     st.write("Au vu du nombre d'image à notre disposition, on a choisi de supprimer les images qui n'ont pas la taille 363*360. ")
 
-    image_path = "Image hauteur_bon.png"
+    image_path = "images/Image_hauteur_bon.png"
 
     st.image(image_path, caption=" ", use_column_width=True)
 
@@ -34,9 +34,9 @@ def app():
 
     st.subheader("Détermination des nouvelles caractéristiques pour la classification :")
 
-    image_path1 = "BA_2862.jpg"
-    image_path2 = "BNE_4555.jpg"
-    image_path3 = "LY_25363.jpg"
+    image_path1 = "images/MMY-270358.jpg"
+    image_path2 = "images/activations_images2/BNE_163373.jpg"
+    image_path3 = "images/LY_25363.jpg"
 
     # Créer trois colonnes
     col1, col2, col3 = st.columns(3)
@@ -63,8 +63,8 @@ def app():
 
 
     st.write("On souhaite maintenant voir si les données que nous avons sélectionné à la main sont effectivement bonne pour classifier nos globules. Pour ce faire, on peut dans un premier temps avoir les histogrammes suivants : ")
-    image_path1 = "Niveaugris.png"
-    image_path2 = "Im_nombre de pixels.png"
+    image_path1 = "images/Niveaugris.png"
+    image_path2 = "images/Im_nombre de pixels.png"
 
 
     # Créer trois colonnes
@@ -76,9 +76,9 @@ def app():
         
     with col2:
         st.image(image_path2, caption="nombre de pixels", use_column_width=True)
-        
-    image_path1 = "Im_petits_contours.png"
-    image_path2 = "Im_gros_contours.png"
+
+    image_path1 = "images/Im_petits_contours.png"
+    image_path2 = "images/Im_gros_contours.png"
 
 
     # Créer trois colonnes

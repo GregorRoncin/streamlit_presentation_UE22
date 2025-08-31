@@ -6,12 +6,12 @@ import Simapp
 import conclusion
 import notreCNN_str
 import introduction_str
-import théorie_cnn
+import theory_cnn
 
 # Dictionnaire des pages pour la navigation
 pages = {"Présentation du problème" : introduction_str,
     "Analyse des data" : Simapp,
-    "Théorie des réseaux" : théorie_cnn,
+    "Théorie des réseaux" : theory_cnn,
     "Notre CNN" : notreCNN_str,
     "Transfer Learning": transfer_learning_str,
     "Fine Tuning": fine_tuning_str,

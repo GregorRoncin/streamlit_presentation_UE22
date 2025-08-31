@@ -27,7 +27,7 @@ def app():
     d'images qui n'ont rien à voir avec les globules blancs, puis ses poids sont gelés et le top-net s'entraine sur nos 
     images. 
     """)
-    st.image('Transfer_learning.svg')
+    st.image('images/Transfer_learning.svg')
 
 
     st.write("**Voici notre code de Transfert Learning à partir de VGG16**")
@@ -69,8 +69,8 @@ def app():
     st.code(transfert_learning_code1,language='python')
     
     st.write("Avec un model_tl.summary() on a : ")
-    
-    st.image('summary tl.png')
+
+    st.image('images/summary tl.png')
 
     st.write("Après avoir il faut compiler notre modèle en lui attribuant une fonction coût et un optimiseur : ")
 
@@ -96,7 +96,7 @@ def app():
 
     st.write("**Résultat de l'entrainement**")
 
-    st.image('entrainement TL_learning.png')
+    st.image('images/enregistrement TL_learning.png')
 
     st.write("**Enregistrement du modèle**")
 
@@ -132,4 +132,4 @@ def app():
             valid_ds = valid_ds.skip(2)
             for i in range(5):
                 acc+= model_tl_exploitable.evaluate(test_ds)[1]
-            st.write("**L'accuracy sur 1 essai est de**", acc/5)
+            st.write("**L'accuracy sur 5 essai est de**", acc/5)

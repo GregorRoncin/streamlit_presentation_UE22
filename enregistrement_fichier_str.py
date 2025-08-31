@@ -45,6 +45,6 @@ def app():
 
     st.write("Malheureusement l'enregistrement d'architecture entière à partir de Google Colab ne fonctionne pas et fait appraitre ce message d'erreur lorsque l'on souhaite le recharger sur nos machines")
 
-    st.image('bug enre.jpg')
+    #st.image('bug enre.jpg')
 
     st.write("Pour résoudre ce problème on enregistre les poids sur Google Colab, puis on enregistre l'architecture global directement sur notre machine")
